@@ -3,7 +3,7 @@
 
 Обсудить [![ЧАТ ДЛЯ ОБЩЕНИЯ https://gitter.im/EvilBeaver/oscript-library](https://badges.gitter.im/EvilBeaver/oscript-library.svg)](https://gitter.im/EvilBeaver/oscript-library?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![GitHub release](https://img.shields.io/github/release/khorevaa/git2reposync.svg)](https://github.com/oscript-library/git2reposync/releases)
+[![GitHub release](https://img.shields.io/github/release/pumbaEO/git2reposync.svg)](https://github.com/oscript-library/git2reposync/releases)
 
 Оглавление
 ==========
@@ -48,7 +48,7 @@
 Проект *git2reposync* представляет собой:
 
 1. Библиотеку `git2reposync` (`src/core`) - которая реализует основные классы для синхронизации хранилища 1С с git
-2. Приложение `git2reposync` (`src/cmd`) - консольное приложение на основе библиотеки [`cli`](https://github/khorevaa/cli)
+2. Приложение `git2reposync` (`src/cmd`) - консольное приложение на основе библиотеки [`cli`](https://github/pumbaEO/cli)
 
 [Документация и описание публичного API библиотеки](docs/README.md)
 
@@ -58,7 +58,7 @@
 <a id="markdown-вручную" name="вручную"></a>
 ### Вручную
 
-1. Скачать файл `git2reposync*.ospx` из раздела [releases](https://github.com/khorevaa/git2reposync/releases)
+1. Скачать файл `git2reposync*.ospx` из раздела [releases](https://github.com/pumbaEO/git2reposync/releases)
 2. Воспользоваться командой:
 
 ```
@@ -84,7 +84,7 @@ $ opm install -f <ПутьКФайлу>
 ### Отличия от `git2reposync` версий 2.x
 
 * Полностью другая строка вызова приложения, а именно используется стандарт POSIX.
-* Работа с хранилищем конфигурации реализовано на основании библиотеки [`v8storage`](https://github.com/khorevaa/v8storage)
+* Работа с хранилищем конфигурации реализовано на основании библиотеки [`v8storage`](https://github.com/pumbaEO/v8storage)
 * Реализована поддержка работы с `http` и `tcp` хранилищами 
 * Функциональность работы через `tool1CD` - перенесена в предустановленный плагин `tool1CD`
 * Вместо двух команд `sync` и `export` оставлена только одна команда `sync`, которая работает как команда `export` в предыдущих версиях, при это функциональность синхронизации с удаленным репозиторием (команды `git pull` и `git push` ) перенесена в отдельный плагин `sync-remote`
@@ -375,7 +375,7 @@ $ opm install -f <ПутьКФайлу>
 Как разработать свой или доработать текущие плагины
 
 1. [Как создать свой плагин](./create-new-plugin.md)
-1. Доработка предустановленных плагинов производится в отдельном репозитории [git2reposync-plugins](https://github.com/khorevaa/git2reposync-plugins)
+1. Доработка предустановленных плагинов производится в отдельном репозитории [git2reposync-plugins](https://github.com/pumbaEO/git2reposync-plugins)
 
 
 <a id="markdown-механизм-подписок-на-события" name="механизм-подписок-на-события"></a>

@@ -56,7 +56,7 @@
 
 Процедура ПолезнаяРабота(ИмяВетки)
 
-	URLРепозитория = "https://github.com/khorevaa/git2reposync-plugins.git";
+	URLРепозитория = "https://github.com/pumbaEO/git2reposync-plugins.git";
 	КаталогСборки = ВременныеФайлы.СоздатьКаталог();
 
 	Лог.Информация("Установка плагинов из
