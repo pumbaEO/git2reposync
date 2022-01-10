@@ -277,6 +277,26 @@ $ opm install -f <ПутьКФайлу>
   Данная команда выполнить синхронизацию хранилища 1С по пути `C:/Хранилище_1С/` и репозитория git в каталоге `C:/work_dir`
   Используя для подключения к хранилищу 1С пользователя `Admin` и пароль `Secret`
 
+- EDT
+
+  Инициализируем плагины
+  `git2reposync p init `
+
+  Включаем edt
+  `git2reposync p e edt `
+
+  Запускаем синхронизацию с указанием необходимых для edt параметров
+
+  ```
+  sync -u admin -W C:\Users\shenja\workspace -P C:\Users\shenja\Documents\git\Conf  C:\Users\shenja\Documents\git\repo_develop C:\Users\shenja\Documents\git\Conf
+  ```
+
+  где
+
+  > C:\Users\shenja\Documents\git\Conf путь git -репозитарию edt проекта, та папка где есть DT-INF
+
+  > -W C:\Users\shenja\workspace - путь к workspace указаному при запуске edt
+
 <a id="markdown-использование-библиотеки-git2reposync" name="использование-библиотеки-git2reposync"></a>
 
 ## Использование библиотеки `git2reposync`
@@ -312,18 +332,18 @@ $ opm install -f <ПутьКФайлу>
 
 1. Сборка обычного пакета (без зависимостей)
 
-   `opm build .`
+`opm build .`
 
-   > при данной сборки не собираются предустановленные пакеты. Их надо будет устанавливать отдельно
+> при данной сборки не собираются предустановленные пакеты. Их надо будет устанавливать отдельно
 
 2. Сборка пакета с зависимостями
 
-   `opm build -mf ./build_packagedef .`
+`opm build -mf ./build_packagedef .`
 
-   При данной сборке будут дополнительно собраны из репозиториев:
+При данной сборке будут дополнительно собраны из репозиториев:
 
-   - `opm` - из ветки develop
-   - `git2reposync-pre-plugins` - из вертки develop
+- `opm` - из ветки develop
+- `git2reposync-pre-plugins` - из вертки develop
 
 <a id="markdown-доработка" name="доработка"></a>
 
@@ -336,3 +356,7 @@ $ opm install -f <ПутьКФайлу>
 ## Лицензия
 
 Смотри файл [`LICENSE`](./LICENSE).
+
+```
+
+```
